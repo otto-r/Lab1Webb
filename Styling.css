@@ -207,3 +207,7 @@
         background-color: white; 
         padding: 10px;
     }
+
+    hr{
+        width: 70%;
+    }
