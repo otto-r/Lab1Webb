@@ -1,0 +1,209 @@
+    .main{
+    background:white;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.4),0 10px 20px 0 rgba(0,0,0,0.19);
+    margin: 10px;
+    
+    }
+    
+    .container{
+        display: flex;
+        flex-flow: row wrap;
+        /* margin: auto; */
+        /* text-align: center; */
+        background-image: url(background.jpg);
+        background-repeat:no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+    
+    .container > * {
+        flex: 1 100%;
+    }
+
+    .personInfoBox{
+        height: 100px;
+        width: 250px;
+        /* border: solid 1px; */
+        box-shadow:0 8px 16px 0 rgba(0,0,0,0.4),0 10px 20px 0 rgba(0,0,0,0.19);
+        background: white;
+        margin: 10px;
+        /* position: relative; */
+        /* display: block; */
+    }
+
+    .portraittext{
+        padding: 3px;
+    }
+
+    .portraitDiv{
+        /* height: 100px; */
+        /* max-width: 100%; */
+        /* width: 100px; */
+        position: relative;
+        float: left;
+    }
+
+    .portraitImg{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .portraitDiv:hover{
+
+    }
+
+    .personTextOne{
+    position: relative;
+    /* float: left; */
+    }
+
+    .personTextTwo{
+        position: absolute;
+        /* bottom: 0px; */
+        /* right: 0px; */
+        /* float: left; */
+    }
+
+    .head{
+        /* background: rgb(0, 177, 0); */
+    }
+    
+    .aside1{
+        /* background: cyan; */
+        min-height: 1px;
+    }
+    
+    .aside2{
+        /* background: cornflowerblue; */
+    }
+
+    .footer{
+        text-align: center;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+    }
+    
+    @media all and (min-width: 600px) {
+        /* We tell both sidebars to share a row */
+        .aside { flex: 1 auto; }
+      }
+    
+    @media all and (min-width: 800px) {
+        .main { flex: 3 0px; }
+        /* .head {order: 1; } */
+        .aside1 { order: 1;  flex: 2;}
+        .main    { order: 2; }
+        .aside2 { order: 3; flex: 2;}
+        .footer  { order: 4; }
+      }
+
+      .headline{
+        position: relative;
+        height: 70px;
+        color: honeydew;
+        background-image:  linear-gradient( rgba(0,0,0, 0.6), rgba(240, 75, 75, 0.6) ), url("hiroshima_panoramic.jpg");
+        
+        /* background-image: url(); */
+        /* background-color: rgb(1, 95, 189); */
+        font-family:Verdana;
+    }
+    .headline h1{
+        position: relative;
+        padding:8px 16px;
+    }
+    .leftSidebar{
+        height: 209px;
+        width: 200px;
+        position: fixed !important;
+        overflow: auto;
+        background-color: rgb(255, 255, 255);
+        z-index: 2;
+        animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0    } to{left:0;opacity:1}
+    }
+    .leftSidebar a{
+        display: list-item;
+        padding:8px 16px;
+        text-decoration:none;
+        color:inherit;
+        font-family:Verdana;
+        font-size: 1.2em;
+        clear: left;
+    }
+    .leftSidebar a:hover{
+        background-color: rgb(206, 206, 206);
+    }
+    button:hover{
+        box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        background-color: white;
+        color:black;
+    }
+    button{
+        position: relative;
+        float: left;
+        border:none;
+        z-index: 1;
+        /* display:inline-block; */
+        padding:8px 16px;
+        vertical-align:middle;
+        overflow:hidden;
+        text-decoration:none;
+        color:inherit;
+        background-color:inherit;
+        text-align:center;
+        cursor:pointer;
+        white-space:nowrap;
+        font-size: 1.5em;
+        font-family:Verdana;
+    }
+
+    .header{
+        font-size: 30pt;
+        padding: 20px 16px;
+    }
+
+    .breadHead{
+        font-size: 18pt;
+        padding:8px 16px;
+    }
+    .breadText{
+        padding:8px 16px;
+    }
+
+    .title{
+        font-size: 1.5em;
+        position: relative;
+        /* float: left; */
+        top: 10px;
+        padding:8px 16px;
+        text-decoration: none;
+        color: white; 
+    }
+
+    .articleImg{
+        width: 100%;
+    }
+
+    /* div {
+        border: 1px solid darkgray;
+        padding: 14px;
+        background-color: beige; */
+      /* } */
+      .table {
+        padding:8px 16px 25px;
+        display: table;
+        margin: auto;
+     }
+
+     .tableHead{
+         font-weight: bold;
+     }
+      .table > div { 
+        display: table-row; 
+        font-size: 14pt; 
+      }
+        .table > div > div {
+        border-bottom: 1px solid black;
+        display: table-cell;
+        background-color: white; 
+        padding: 10px;
+    }
