@@ -241,12 +241,40 @@
         padding: 1px;
     }
 
+    .back{
+        background: rgba(0, 0, 0, 0.7);
+        position: fixed;
+        text-decoration:none;
+        font-size: 26px;
+        left: 90%;
+        border-radius: 5px;
+        width: 100%;
+        height: 35px;
+        /* right: 0;  */
+        top: 2%;
+    }
+
+    .backa{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .back:hover{
+        background: rgba(255, 255, 255, 0.7);
+    }
+
+    .backa:hover{
+        color: black;
+    }
+
     header,
 .demo,
 .demo p {
   margin: 4em 0;
   text-align: center;
 }
+
 
 /**
  * Tooltip Styles
