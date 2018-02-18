@@ -209,6 +209,9 @@
 
     hr{
         width: 70%;
+        background: black;
+        border: 0px;
+        height: 1px;
     }
 
     .containerHead{
@@ -267,7 +270,7 @@
     .backa:hover{
         color: black;
     }
-
+/* 
     header,
 .demo,
 .demo p {
@@ -276,18 +279,13 @@
 }
 
 
-/**
- * Tooltip Styles
- */
 
-/* Add this attribute to the element that needs a tooltip */
 [data-tooltip] {
   position: relative;
   z-index: 2;
   cursor: pointer;
 }
 
-/* Hide the tooltip content by default */
 [data-tooltip]:before,
 [data-tooltip]:after {
   visibility: hidden;
@@ -297,7 +295,6 @@
   pointer-events: none;
 }
 
-/* Position tooltip above the element */
 [data-tooltip]:before {
   position: absolute;
   bottom: 150%;
@@ -318,7 +315,6 @@
   line-height: 1.2;
 }
 
-/* Triangle hack to make tooltip look like a speech bubble */
 [data-tooltip]:after {
   position: absolute;
   bottom: 150%;
@@ -334,11 +330,10 @@
   line-height: 0;
 }
 
-/* Show tooltip content on hover */
 [data-tooltip]:hover:before,
 [data-tooltip]:hover:after {
   visibility: visible;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
-}
+} */
