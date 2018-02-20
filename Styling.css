@@ -69,7 +69,8 @@
     
     .aside1{
         /* background: cyan; */
-        min-height: 1px;
+        /* min-height: 1px; */
+        padding: 1px;
     }
     
     .aside2{
@@ -84,7 +85,7 @@
     
     @media all and (min-width: 600px) {
         /* We tell both sidebars to share a row */
-        .aside { flex: 1 auto; }
+        /* .aside { flex: 1 auto; } */
       }
     
     @media all and (min-width: 800px) {
