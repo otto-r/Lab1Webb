@@ -17,18 +17,31 @@
         flex: 1 100%;
     }
 
+    @media all {
+        .portraitDiv { order: 1; }
+        .personInfo {order: 2;}
+    }
+
     .personInfoBox{
         height: 100px;
         width: 250px;
         box-shadow:0 8px 16px 0 rgba(0,0,0,0.4),0 10px 20px 0 rgba(0,0,0,0.19);
         background: white;
         margin: 10px;
+        display: flex;
+        position: relative;
     }
 
-    .portraittext{
-        padding: 3px;
+    personInfo{
+        font-size: 24;
+        position: relative; 
+        max-width: 100%; 
+        max-height: 100%;
+        /* left: 25px;
+        border: 2px solid hotpink;
+        background: azure; */
     }
-
+    
     .portraitDiv{
         position: relative;
         float: left;
@@ -41,10 +54,13 @@
 
     .personTextOne{
         position: relative;
+        clear: left;
     }
 
     .personTextTwo{
         position: absolute;
+        clear: left;
+        bottom: 0px;
     }
 
     .head{
@@ -67,7 +83,6 @@
     
     @media all and (min-width: 1000px) {
         .main { flex: 3 0px; }
-        /* .head {order: 1; } */
         .aside1 { order: 1;  flex: 2;}
         .main    { order: 2; }
         .aside2 { order: 3; flex: 2;}
@@ -79,9 +94,6 @@
         height: 70px;
         color: honeydew;
         background-image:  linear-gradient( rgba(0,0,0, 0.6), rgba(0, 0, 0, 0.6) ), url("hiroshima_panoramic.jpg");
-        
-        /* background-image: url(); */
-        /* background-color: rgb(1, 95, 189); */
         font-family:Verdana;
     }
     .headline h1{
@@ -132,7 +144,7 @@
     }
 
     .header{
-        font-size: 30pt;
+        font-size: 30px;
         padding: 20px 16px;
     }
 
